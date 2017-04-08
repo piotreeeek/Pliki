@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 /**
  * Created by Piotrek on 2017-04-07.
  */
-public class ReadSpace implements CzytnikPliku {
+public class ReadSpace implements MyFileReader{
     File file;
 
     public ReadSpace(File file){

@@ -6,6 +6,6 @@ import java.io.IOException;
 /**
  * Created by Piotrek on 2017-04-07.
  */
-public interface CzytnikPliku {
+public interface MyFileReader {
     public String readFile() throws IOException;
     }

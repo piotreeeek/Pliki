@@ -26,7 +26,7 @@ public class Start {
 
         File folder = new File(filePath);
         File[] listOfFiles = folder.listFiles(filter);
-        List<CzytnikPliku> listOfFileReaders = new ArrayList<CzytnikPliku>();
+        List<MyFileReader> listOfFileReaders = new ArrayList<MyFileReader>();
 
         try {
             for (int i = 0; i < listOfFiles.length; i++) {
@@ -44,7 +44,7 @@ public class Start {
             System.out.println("Searched file not present in directory");
         }
 
-        for (final CzytnikPliku fileRed: listOfFileReaders) {
+        for (MyFileReader fileRed: listOfFileReaders) {
             System.out.println(fileRed.readFile());
         }
 
